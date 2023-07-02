@@ -9,7 +9,6 @@ import os
 from scipy import ndimage
 
 from Model import Model
-
 import cloudinary
 import cloudinary.uploader
 
@@ -43,7 +42,6 @@ def image_loader(image_name):
      except Exception as e:
         raise Exception(f"Error loading image: {str(e)}")
      
-
 
 
   
