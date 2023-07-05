@@ -1,4 +1,11 @@
 # Python package
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students Starter (e2461abb-68a7-426a-991b-8d568b35c8d7)'
+    appType: 'webApp'
+    WebAppName: 'ML'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Create and test a Python package on multiple Python versions.
 # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
